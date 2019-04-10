@@ -6,14 +6,14 @@ def word_counter(sentence, dictionnary)
 end
 
 
-text = File.read(t8.shakespeare.txt)
+shakespeare_text = File.read('lib/shakespeare.txt')
 google_dictionnary = ["the", "of", "and", "to", "a", "in", "for", "is", "on", "that", "by", "this", "with", "i", "you", "it", "not", "or", "be", "are"]
 
-word_counter(text, google_dictionnary)
-
+puts word_counter(shakespeare_text, google_dictionnary)
 
 # longest = %w{ cat sheep bear }.inject do |memo, word|
 #    memo.length > word.length ? memo : word
+
 
 
 
